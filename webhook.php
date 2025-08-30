@@ -5,7 +5,7 @@ use MercadoPago\MercadoPagoConfig;
 use MercadoPago\Client\PreApproval\PreApprovalClient;
 
 // Configurar token de acceso (lee de variable de entorno MP_ACCESS_TOKEN si está disponible)
-$mpToken = getenv('MP_ACCESS_TOKEN') ?: "APP_USR-7374749047926419-083007-9b5acd96d25205c04d822cb8dabdb134-2655556529";
+$mpToken = getenv('MP_ACCESS_TOKEN') ?: "TESTXXXXXXXXX";
 MercadoPagoConfig::setAccessToken($mpToken);
 
 $input = file_get_contents("php://input");
